@@ -17,4 +17,4 @@ nodes*
 .delivery/cli.toml
 
 # My own
-.sync-config.cson
+.sync-config*cson
