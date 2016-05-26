@@ -32,6 +32,7 @@ module DeliveryCluster
       str_const = driver.split('_').map(&:capitalize).join
 
       klass = const_get(str_const)
+      # Initialize class DeliveryCluster::Provisioning with Chef Node.
       klass.new(node)
     rescue => e
       raise "Could not load the '#{driver}' driver: #{e.message}"

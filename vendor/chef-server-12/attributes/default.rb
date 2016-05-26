@@ -29,7 +29,9 @@ default['chef-server-12']['version']       = 'latest'
 # => default['chef-server-12']['plugin']['PLUGIN_NAME'] = true
 default['chef-server-12']['plugin']['manage']           = true
 default['chef-server-12']['plugin']['reporting']        = true
-default['chef-server-12']['plugin']['push-jobs-server'] = true
+# Disable push-jobs-server as the issue 121
+# https://github.com/chef/opscode-pushy-server/issues/121
+default['chef-server-12']['plugin']['push-jobs-server'] = false
 default['chef-server-12']['plugin']['chef-sync']        = false
 
 # Chef Server Parameters
