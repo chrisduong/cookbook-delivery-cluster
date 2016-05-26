@@ -20,8 +20,12 @@
 # limitations under the License.
 #
 
+# Choose which driver to use
+# Where is this method defined
+# Provisioning is mixed in the Recipes
 with_driver provisioning.driver
 
+# Global machine_options
 with_machine_options(provisioning.machine_options)
 
 # Link the actual "cluster_data_dir" to "delivery-cluster-data"
